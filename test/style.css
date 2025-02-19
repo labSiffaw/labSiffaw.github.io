@@ -27,15 +27,24 @@ body {
     transition: background-color 0.3s ease;
 }
 
+/* 默认的播放按钮图标 */
+.play-button:before {
+    content: '▶'; /* 默认使用红色 ▶ */
+    font-size: 48px;
+    color: white;
+}
+
 /* 鼠标悬停时改变背景颜色 */
 .play-button:hover {
     background-color: #cc0000;
 }
 
-.play-button:before {
-    content: '';
-    width: 30px;
-    height: 30px;
-    background-color: white; /* 白色三角形 */
-    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+/* 被点击后变成⏸ 按钮 */
+.play-button.paused {
+    background-color: gray;
+}
+
+.play-button.paused:before {
+    content: '⏸'; /* 改为暂停图标 */
+    color: white;
 }
