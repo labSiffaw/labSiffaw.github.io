@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站 111</title>
-    <link rel="stylesheet" href="../style.css">  <!-- 引入样式 -->
+    <title>网站 111 - YouTube 图标</title>
+    <link rel="stylesheet" href="style.css">  <!-- 引用111专属样式 -->
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>欢迎来到网站 111</h1>
-        </header>
-        <p>这是我的第一个子网站：网站 111。</p>
-        <nav>
-            <a href="../index.html">返回主页</a>
-        </nav>
+        <h1>这是网站 111</h1>
+        <p>点击下面的按钮来模仿 YouTube 的播放按钮：</p>
+        <div class="play-button"></div>
     </div>
 </body>
 </html>
