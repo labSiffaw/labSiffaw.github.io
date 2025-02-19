@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网站 test - YouTube 图标</title>
-    <link rel="stylesheet" href="style.css">  <!-- 引用test专属样式 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>这是网站 test</h1>
         <p>点击下面的按钮来模仿 YouTube 的播放按钮：</p>
-        <div class="play-button"></div>
+        <div class="play-button" onclick="togglePlayPause()"></div>
     </div>
+
+    <script>
+        // 切换播放和暂停状态
+        function togglePlayPause() {
+            const button = document.querySelector('.play-button');
+            button.classList.toggle('paused'); // 切换 'paused' 类
+        }
+    </script>
 </body>
 </html>
