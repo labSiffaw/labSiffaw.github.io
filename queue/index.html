@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色分配器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>角色分配器</h1>
+        <div class="input-group">
+            <label for="characters">请输入角色（半逗号分隔）：</label>
+            <input type="text" id="characters" placeholder="例如：A,B,C,D,E,F,G,H">
+        </div>
+        <div class="input-group">
+            <label for="columns">请输入队列数量：</label>
+            <input type="number" id="columns" placeholder="例如：5">
+        </div>
+        <div class="input-group">
+            <label for="average">是否平均分配：</label>
+            <input type="checkbox" id="average">
+        </div>
+        <button id="generateBtn">生成分配结果</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
