@@ -1,0 +1,55 @@
+/* 基础样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 页面容器 */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 标题样式 */
+header h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* 导航链接样式 */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #0073e6;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 返回链接样式 */
+nav a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0073e6;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
