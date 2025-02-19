@@ -9,15 +9,26 @@
 <body>
     <div class="container">
         <h1>这是网站 test</h1>
-        <p>点击下面的按钮来模仿 YouTube 的播放按钮：</p>
+        <p>点击下面的按钮来来进行网页互动吧~</p>
         <div class="play-button" onclick="togglePlayPause()"></div>
+        <p>共点击：<span id="click-count">0</span>次</p> <!-- 点击次数显示 -->
     </div>
 
     <script>
-        // 切换播放和暂停状态
+        let clickCount = 0; // 初始化点击次数
+
         function togglePlayPause() {
             const button = document.querySelector('.play-button');
-            button.classList.toggle('paused'); // 切换 'paused' 类
+            const countDisplay = document.getElementById('click-count'); // 获取点击次数显示元素
+
+            if (!button.classList.contains('paused')) {
+                // 如果是播放状态 (▶)，切换到暂停状态 (⏸)，并增加点击次数
+                clickCount++;
+                countDisplay.textContent = clickCount; // 更新显示的点击次数
+            }
+
+            // 切换播放和暂停状态
+            button.classList.toggle('paused');
         }
     </script>
 </body>
