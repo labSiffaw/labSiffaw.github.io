@@ -1,0 +1,41 @@
+/* 设置整个页面的基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+/* YouTube 风格的播放按钮 */
+.play-button {
+    width: 100px;
+    height: 100px;
+    background-color: red; /* 红色背景 */
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%); /* 三角形形状 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停时改变背景颜色 */
+.play-button:hover {
+    background-color: #cc0000;
+}
+
+.play-button:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: white; /* 白色三角形 */
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
