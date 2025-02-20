@@ -14,40 +14,15 @@ body {
     text-align: center;
 }
 
-/* 播放按钮样式 - 红色三角形 */
-.play-button {
-    width: 100px;
-    height: 100px;
-    background-color: red; /* 红色背景 */
-    clip-path: polygon(0% 0%, 100% 50%, 0% 100%); /* 三角形形状 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-radius 0.3s ease;
-}
-
 /* 播放按钮图标 */
 .play-button:before {
     content: '▶'; /* 默认使用红色 ▶ */
     font-size: 48px;
-    color: white;
-}
-
-/* 按钮悬停时改变背景颜色 */
-.play-button:hover {
-    background-color: #cc0000;
-}
-
-/* 暂停按钮样式 - 灰色圆形 */
-.play-button.paused {
-    background-color: gray;
-    clip-path: circle(50% at 50% 50%); /* 圆形 */
-    border-radius: 50%; /* 圆形 */
+    color: red;
 }
 
 .play-button.paused:before {
     content: '⏸'; /* 改为暂停图标 */
-    color: white;
+    color: gray;
     font-size: 48px;
 }
